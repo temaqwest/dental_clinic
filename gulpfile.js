@@ -50,7 +50,7 @@ gulp.task('dev', dev);
 
 // Release mode tasks
 const build = gulp.series(cleanDist, mainTasks);
-gulp.task('release', build);
+gulp.task('build', build);
 
 // Create zip archive
 const createZip = gulp.series(cleanDist, mainTasks, zipIt);

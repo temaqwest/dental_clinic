@@ -27,7 +27,7 @@ export const path = {
         style: srcDir + 'assets/scss/main.scss',
         js: srcDir + 'assets/js/app.js',
         fonts: srcDir + 'assets/fonts/*.*',
-        img: srcDir + 'assets/media/**/*.{jpg,jpeg,JPEG,png,gif}',
+        img: srcDir + 'assets/media/**/*.{jpg,jpeg,JPEG,JPG,PNG,png,gif}',
         svg: srcDir + 'assets/media/**/*.svg',
         files: srcDir + 'assets/files/**/*.*'
     },
@@ -38,11 +38,11 @@ export const path = {
         },
         style: srcDir + 'assets/scss/**/*.scss',
         js: {
-            modules: srcDir + 'assets/scripts/modules/*.js',
-            main: srcDir + 'assets/scripts/app.js',
+            modules: srcDir + 'assets/js/modules/*.js',
+            main: srcDir + 'assets/js/app.js',
         },
         fonts: srcDir + 'assets/fonts/*.*',
-        img: srcDir + 'assets/media/**/*.{jpg,jpeg,png,gif,svg,ico}',
+        img: srcDir + 'assets/media/**/*.{jpg,jpeg,JPG,JPEG,PNG,png,gif,svg,ico}',
         files: srcDir + 'assets/files/**/*.*'
     },
     buildDir,

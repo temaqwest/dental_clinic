@@ -1,7 +1,7 @@
-/**
- *
- *
- * @author Tatevosyan Artem (@teqst)
- */
+import {createSlider} from "./modules/docs_slider.js";
+import {createMenu} from "./modules/menu.js";
+import {minimize} from "./modules/minimize.js";
 
-console.log('root')
+createSlider();
+createMenu();
+minimize();

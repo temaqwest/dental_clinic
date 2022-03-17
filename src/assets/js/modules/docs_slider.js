@@ -4,31 +4,43 @@
  * @author Tatevosyan Artem (@teqst)
  */
 
+import Swiper, { Navigation } from 'swiper';
 
-import Swiper from 'swiper';
+export const createSlider = () => {
+    Swiper.use([Navigation]);
+    const slider = document.querySelector('.docs-slide');
 
-const slider = document.querySelector('.docs-slide');
+    if (!slider) return false;
 
-if (!slider) return false;
+    let options = {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
 
-const swiper = new Swiper('.docs-slide', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.docs-slide__button--next',
+            prevEl: '.docs-slide__button--prev',
+        },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+        slidesPerView: 3,
+        breakpoints: {
+            900: {
+                slidesPerView: 3,
+            },
+            800: {
+                slidesPerView: 2,
+            },
+            300: {
+                slidesPerView: 1,
+            }
+        }
+    };
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
+    const swiper = new Swiper('.docs-slide', options);
+}

@@ -61,6 +61,17 @@
   }
 }
 .sItem {
+
+  &:nth-child(odd) {
+    background: rgb(119, 119, 119);
+    color: #fff;
+  }
+
+  &:nth-child(even) {
+    background: rgb(160, 160, 160);
+    color: #000;
+  }
+
   height: 363px;
 }
 .slAvatar {

@@ -53,6 +53,19 @@
   transition: transform 0.6s ease;
 }
 .slider__item {
+  &:nth-child(odd) {
+    .sItem {
+      background: rgb(119, 119, 119);
+      color: #fff;
+    }
+  }
+
+  &:nth-child(even) {
+    .sItem {
+      background: rgb(160, 160, 160);
+      color: #000;
+    }
+  }
 
   >div {
     text-align: center;
@@ -61,19 +74,9 @@
   }
 }
 .sItem {
-
-  &:nth-child(odd) {
-    background: rgb(119, 119, 119);
-    color: #fff;
-  }
-
-  &:nth-child(even) {
-    background: rgb(160, 160, 160);
-    color: #000;
-  }
-
   height: 363px;
 }
+
 .slAvatar {
   max-height: 150px;
   height: 100%;

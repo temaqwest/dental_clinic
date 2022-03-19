@@ -7,18 +7,18 @@
 
 
 export const createMenu = () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navlinks = document.querySelector('.nav-links');
-    const links = document.querySelectorAll('.nav-links li');
-    const line = document.querySelectorAll('.line');
+    const hamburger = document.querySelector('.menu__hamburger');
+    const navlinks = document.querySelector('.menu__nav-links');
+    const links = document.querySelectorAll('.menu__nav-links-item');
+    const line = document.querySelectorAll('.menu__line');
 
     hamburger.addEventListener('click', () => {
-        navlinks.classList.toggle("open");
+        navlinks.classList.toggle("menu__nav-links--open");
         line.forEach(line => {
-            line.classList.toggle("rot");
+            line.classList.toggle("menu__line--active");
         })
         links.forEach(link => {
-            link.classList.toggle("fade");
+            link.classList.toggle("menu__nav-links-item--active");
         })
     })
 }

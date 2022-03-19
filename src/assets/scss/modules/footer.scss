@@ -1,0 +1,79 @@
+/**
+ * 
+ *
+ * @author Tatevosyan Artem (@teqst)
+ */
+
+.footer {
+  background-color: #202020;
+  min-height: 460px;
+
+  &__container {
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: 'Comfortaa', sans-serif;
+    padding-top: 140px;
+  }
+
+  &__logo {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5px;
+    color: #fff;
+
+    h5 {
+      font-family: 'Comfortaa', sans-serif;
+    }
+  }
+
+  ul {
+    li {
+      list-style: none;
+      color: #fff;
+      font-family: Comfortaa;
+      margin-bottom: 6px;
+      a {
+        text-decoration: none;
+        color: #2784CE;
+        font-family: Comfortaa;
+      }
+    }
+  }
+
+  img {
+    max-width: 230px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .footer {
+    &__container {
+      width: calc(100% - 80px);
+      margin: 30px 10px;
+      column-gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 1018px) {
+  .footer {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__logo {
+      margin-bottom: 15px;
+    }
+
+    &__map,
+    &__contacts,
+    &__address {
+      margin-bottom: 15px;
+    }
+  }
+}

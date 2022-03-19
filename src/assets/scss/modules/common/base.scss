@@ -1,0 +1,48 @@
+/**
+ * 
+ *
+ * @author Tatevosyan Artem (@teqst)
+ */
+
+/**
+ * Description: Container styles
+ */
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $desktop-lg;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+@media (max-width: $desktop-md) {
+  .container {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/**
+ * Description: Font family
+ */
+
+html {
+  font-family: 'Inter', sans-serif;
+}

@@ -4,9 +4,14 @@
  * @author Tatevosyan Artem (@teqst)
  */
 
+@import "modules/common/destyle";
+@import "modules/common/variables";
 @import "modules/clinic";
 @import "modules/slider";
 @import "modules/minimize";
 @import "modules/header";
 @import "modules/info";
 @import "modules/footer";
+@import "modules/about";
+@import "modules/common/base";
+@import "modules/common/helpers";

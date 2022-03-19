@@ -1,35 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    @@include('markup_modules/head.html', {
+    @@include('markup_modules/#UI/head.html', {
         "title": "Главная"
     })
     <body>
-        @@include('markup_modules/header.html', {})
-        <div class="top">
-            <hgroup>
-                <h1>СтоматологиЯ</h1>
-                <h2>Стоматологический кабинет <br> г. Ставрополь</h2>
-            </hgroup>
-            <div class="wrapper">
-                <a href="information.html" class="wave_btn">
-                    <span class="wave_btn__text">Позвонить</span>
-                    <span class="wave_btn__waves"></span>
-                </a>
-            </div>
-        </div>
+        @@include('markup_modules/#UI/header.html', {})
+        @@include('markup_modules/main_top.html', {})
         @@include('markup_modules/info.html', {})
-        <div class="about">
-            <img src="assets/img/about.jpg">
-            <div id="text">
-                <h1>О нас</h1>
-                <p>
-                    Мы рады встрече с вами на официальном сайте сети стоматологий «СтоматологиЯ» в Ставрополе. Уже более 17 лет мы ежедневно доказываем своей работой, что качественная стоматологическая помощь должна быть профессиональной, быстрой и доступной. Сегодня стоматология - это безопасно и безболезненно.
-                    Наш комплекс отличается особым отношением к своим пациентам. Cовременное оснащение, технологичное оборудование, грамотные специалисты и уютная обстановка позволили нам завоевать признание и любовь наших пациентов. Мы, в первую очередь, заботимся о вашем здоровье. Стоматология для нас - это не только работа, но и призвание.
-                    В наших клиниках вы можете воспользоваться следующими видами стоматологической <a href="services" id="help_link">помощи</a>
-                </p>
-            </div>
-        </div>
-        @@include('markup_modules/footer.html', {})
-        @@include('markup_modules/scripts.html', {})
+        @@include('markup_modules/about.html', {})
+        @@include('markup_modules/#UI/footer.html', {})
+        @@include('markup_modules/#UI/scripts.html', {})
     </body>
 </html>

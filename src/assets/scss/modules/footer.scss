@@ -9,13 +9,10 @@
   min-height: 460px;
 
   &__container {
-    margin: auto;
-    width: 85%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     align-items: flex-start;
-    font-family: 'Comfortaa', sans-serif;
     padding-top: 140px;
   }
 
@@ -26,7 +23,6 @@
     color: #fff;
 
     h5 {
-      font-family: 'Comfortaa', sans-serif;
     }
   }
 
@@ -34,12 +30,10 @@
     li {
       list-style: none;
       color: #fff;
-      font-family: Comfortaa;
       margin-bottom: 6px;
       a {
         text-decoration: none;
         color: #2784CE;
-        font-family: Comfortaa;
       }
     }
   }
@@ -54,16 +48,17 @@
   .footer {
     &__container {
       width: calc(100% - 80px);
-      margin: 30px 10px;
+      margin: 0;
       column-gap: 20px;
     }
   }
 }
 
-@media (max-width: 1018px) {
+@media (max-width: $tablet) {
   .footer {
     &__container {
       flex-direction: column;
+      padding-top: 70px;
     }
 
     &__logo {

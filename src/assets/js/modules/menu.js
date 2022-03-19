@@ -13,6 +13,7 @@ export const createMenu = () => {
     const line = document.querySelectorAll('.menu__line');
 
     hamburger.addEventListener('click', () => {
+        document.body.classList.toggle('h--overflow-hidden');
         navlinks.classList.toggle("menu__nav-links--open");
         line.forEach(line => {
             line.classList.toggle("menu__line--active");

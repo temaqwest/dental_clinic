@@ -11,6 +11,7 @@
     color: #202020;
     background: url("../img/call_head.png") no-repeat 0 0px;
     font-size: calc(0.5rem + 6 * (100vw - 320px) / 880);
+
     ul {
       li {
         list-style: none;
@@ -27,9 +28,9 @@
   &__nav-links {
     display: flex;
     list-style: none;
-    width: 85%;
+    width: 100%;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
 
@@ -66,13 +67,17 @@
   }
 
   &__logo {
+    &--mobile {
+      display: none;
+    }
+
     &-img {
       margin-right: 40px;
     }
   }
 }
 
-@media (max-width: 1330px) {
+@media (max-width: $desktop-md) {
  .menu {
    &__nav {
      min-height: 85px;
@@ -93,8 +98,10 @@
 }
 
 
-@media (max-width: 1018px) {
+@media (max-width: $tablet) {
   .menu {
+    background-color: #F8F8F8;
+
     &__address {
       display: block;
       margin: 30px 10px;
@@ -108,12 +115,15 @@
     }
 
     &__nav {
+      background-color: inherit;
       position: relative;
-      min-height: 40px;
+      height: 60px;
+      min-height: initial;
     }
 
     &__nav-links {
       position: fixed;
+      top: 0;
       background-color: #788388;
       height: 100%;
       width: 100%;
@@ -171,12 +181,21 @@
         width: 200px;
         margin: 5px;
       }
+
+      &--mobile {
+        display: block;
+        height: 60px;
+
+        .menu__logo-img {
+          height: inherit;
+        }
+      }
     }
 
     &__hamburger {
       position: absolute;
       cursor: pointer;
-      right: 5%;
+      right: 0;
       top: 50%;
       transform: translate(-5%, -50%);
       display: block;

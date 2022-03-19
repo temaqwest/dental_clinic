@@ -36,7 +36,7 @@ export const path = {
             modules: srcDir + 'markup_modules/*.html',
             pages: srcDir + '*.html',
         },
-        style: srcDir + 'assets/scss/**/*.scss',
+        style: srcDir + 'assets/scss/**/*.{scss,css}',
         js: {
             modules: srcDir + 'assets/js/modules/*.js',
             main: srcDir + 'assets/js/app.js',
